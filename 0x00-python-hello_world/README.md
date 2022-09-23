@@ -65,10 +65,15 @@ C Scripts
 9. && 10. Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
    - Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
-11.Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+11. Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
 
     - Use the function write from the sys module
     - You are not allowed to use print
     - Your script should print to stderr
     - Your script should exit with the status code 1
+12. Write a script that compiles a Python script file.
+
+The Python file name will be stored in the environment variable $PYFILE
+
+The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
 
