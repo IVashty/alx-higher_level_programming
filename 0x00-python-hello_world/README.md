@@ -62,7 +62,13 @@ C Scripts
    - You are not allowed to use string literals
 
 
-9. Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
+9. && 10. Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
    - Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
+11.Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+
+    - Use the function write from the sys module
+    - You are not allowed to use print
+    - Your script should print to stderr
+    - Your script should exit with the status code 1
 
