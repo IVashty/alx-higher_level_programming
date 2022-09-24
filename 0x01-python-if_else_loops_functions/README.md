@@ -10,4 +10,5 @@
             - if the number is 0: is zero
             - if the number is less than 0: is negative
                 followed by a new line
+1. This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number.
 
