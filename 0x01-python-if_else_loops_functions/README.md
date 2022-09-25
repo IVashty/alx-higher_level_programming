@@ -105,4 +105,5 @@ You don’t need to understand __import__
     - Prototype: `def remove_char_at(str, n)`:
     - You are not allowed to import any module
 ~ You don’t need to understand __import__
-
+16. Write the Python function def magic_calculation(a, b, c): that does exactly
+    the same as the following Python bytecode: tip-ByteCode
