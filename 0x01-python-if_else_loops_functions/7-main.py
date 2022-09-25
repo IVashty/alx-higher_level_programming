@@ -22,4 +22,11 @@ print_last_digit(0)
 r = print_last_digit(-1024)
 print(r)
 
+#quiz 10
+add = __import__('10-add').add
+
+print(add(1, 2))
+print(add(98, 0))
+print(add(100, -2))
+
 
