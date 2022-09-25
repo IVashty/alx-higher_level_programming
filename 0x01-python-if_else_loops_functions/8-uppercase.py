@@ -2,6 +2,6 @@
 def uppercase(str):
     alist = list(str)
     for v in range(len(alist)):
-        if (ord(alist[v]) <= 122 and ord(alist[v]) >= 97):
+        if (ord(alist[v]) < 123 and ord(alist[v]) > 96):
             alist[v] = (chr(ord(alist[v]) - 32))
-            print("{}".format(("").join(alist)))
+    print("{}".format(("").join(alist)))
