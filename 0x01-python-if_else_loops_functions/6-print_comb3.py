@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for v in range(0, 9):
-    for k in range(v + 1, 10):
-        if v == 8:
-            print("{}{}".format(i, k))
-        else:
-            print("{}{}".format(i, k), end=", ")
+for number in range(100):
+    if int(number / 10) != number and int(number / 10) < number % 10:
+        print("{}{}".format(int(number / 10), number % 10), end="")
+        if number != 89:
+            print(", ", end="")
+print("")
