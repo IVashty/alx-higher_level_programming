@@ -37,3 +37,10 @@ print(pow(98, 2))
 print(pow(98, 0))
 print(pow(100, -2))
 print(pow(-4, 5))
+
+#quiz 12
+fizzbuzz = __import__('12-fizzbuzz').fizzbuzz
+
+fizzbuzz()
+print("")
+
