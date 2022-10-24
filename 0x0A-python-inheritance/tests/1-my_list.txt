@@ -1,4 +1,4 @@
-The 1-my_list Module:
+>>> The 1-my_list Module:
 
     >>> is_same_class = __import__("1-my_list").is_same_class
 
