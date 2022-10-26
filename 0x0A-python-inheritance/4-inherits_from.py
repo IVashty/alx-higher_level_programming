@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Module inherits_from
 Returns a boolean if the object is an instance of a class inherited from
