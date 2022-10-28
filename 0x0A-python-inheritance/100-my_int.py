@@ -10,10 +10,10 @@ class MyInt(int):
         """
         equal is not equal
         """
-        return self - other != 0
+        return super().__ne__(other)
 
     def __ne__(self, other):
         """
         not  equal is equal
         """
-        return self - other == 0
+        return super().__eq__(other)
