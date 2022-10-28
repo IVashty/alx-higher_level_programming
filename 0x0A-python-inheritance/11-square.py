@@ -4,17 +4,17 @@ it uses the inherit for a new Rectangle form TASK 9
 """
 
 
-Rectangle = __import__("9-rectangle").Rectangle
+TaSquare = __import__("10-square").Square
 
 
-class Square(Rectangle):
+class Square(TaSquare):
     """
     this square inherits from Square
     """
 
     def __init__(self, size):
         """Constructor of square"""
-        super().__init__(size, size)
+        super().__init__(size)
         self.__size = size
 
     def __str__(self):
