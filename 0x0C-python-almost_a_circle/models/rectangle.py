@@ -23,14 +23,37 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+        @property
         def my_get(self):
-            return (self.width, self.height, self.x, self.y)
+            return (self.__width, self.__height, self.__x, self.__y)
 
-        def my_set(self, w, h, xx, yy):
-            self.__width = w
-            self.height = h
-            self.__x = ex
-            self.__y = wy
+        @my_get.setter
+        def my_set(self, value):
+            self.validate_integer("width", value, False)
+            self.__width = value
+            self.validate_integer("height", value, False)
+            self.__height = value
+            self.validate_integer("x", value)
+            self.__x = value
+            self.validate_integer("y", value)
+            self.__y = value
+
+        def validate_integer(self, name, value, eq=True):
+            """
+            My validator for checking values(if may be ts an in)
+            """
+            if type(value) is not int:
+                raise TypeError("{} must be an integer".format(name))
+            if eq and value < 0:
+                raise TypeError("{} must be >= 0".format(name))
+            elif not eq and value <= 0:
+                raise ValueError("{} must be > 0".format(name))
+
+        def area(self) -> int:
+            """
+            Finding the area of the rectangle
+            """
+            return self.width * self.height
 
         def __str__(self) -> str:
             """
