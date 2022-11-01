@@ -150,4 +150,3 @@ class Rectangle(Base):
             newkey = i.replace('_Rectangle__', "")
             newdict[newkey] = self.__dict__[i]
         return newdict
-
