@@ -12,6 +12,7 @@ __General__
     What are JOIN and UNION
 
 __Requirements__
+
 *General*
 
     Allowed editors: vi, vim, emacs
