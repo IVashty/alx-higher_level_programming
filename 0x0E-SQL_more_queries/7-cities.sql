@@ -1,6 +1,5 @@
---Create a database htbn_0d_usa
--- Creates a table called states if it doesn't EXISTS
-CREATE htbn_0d_usa;
+-- create a database htbn_0d_usa and creates a table called states if it doesn't EXISTS
+CREATE DATABASE IF NOT EXISTS htbn_0d_usa;
 USE htbn_0d_usa;
 CREATE TABLE IF NOT EXISTS cities(
         id INT UNIQUE PRIMARY KEY AUTO_INCREMENT NOT NULL,
