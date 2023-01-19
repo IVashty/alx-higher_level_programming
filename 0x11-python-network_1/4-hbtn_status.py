@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-fetch given url
+fetch given url to find status
 """
 import requests
 
