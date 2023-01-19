@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-take url and send request to the url and display itsvalue of the variable in the response header
+take url and send request to the url and
+display its value of the variable in the response header
 """
 import requests
 import sys
