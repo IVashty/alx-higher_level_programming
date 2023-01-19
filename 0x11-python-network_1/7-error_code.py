@@ -9,4 +9,7 @@ import sys
 
 if __name__ == "__main__":
     request = requests.get(sys.argv[1])
-    print(request.text)
+    if request.status_code == requests.codes.ok:
+        print(request.text)
+    else:
+        print("Error Code: {}", request.status_code)
