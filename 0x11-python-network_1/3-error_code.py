@@ -5,6 +5,7 @@ displays the body of a response from a url
 """
 import urllib.request
 import sys
+import urllib.error
 
 
 if __name__ == "__main__":
