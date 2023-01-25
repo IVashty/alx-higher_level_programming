@@ -3,14 +3,15 @@
 script takes in a url and
 displays the body of a response from a url
 """
-import urllib.request
-import sys
-import urllib.error
+from urllib import request, error
+from sys import argv
 
 
 if __name__ == "__main__":
+    url = argv[1]
+
     try:
-        with urllib.request.urlopen(sys.argv[1]) as response:
+        with request.urlopen(url) as response:
             print(response.read().decode("utf-8"))
-    except urllib.error.HTTPError as error:
-        print("Error Code:", error.code)
+    except error.HTTPError as Error:
+        print("Error Code:", Error.code)
