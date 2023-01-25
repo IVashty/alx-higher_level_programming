@@ -3,13 +3,14 @@
 takes in the url,sends a reuest to it(url) and
 displays the body of response with requests library
 """
-import requests
-import sys
+from requests import get
+from sys import argv
 
 
 if __name__ == "__main__":
-    request = requests.get(sys.argv[1])
-    if request.status_code == requests.codes.ok:
-        print(request.text)
-    else:
-        print("Error Code: {}", request.status_code)
+    url = argv[1]
+    response = get(url)
+    error = "Error code: {}"
+    status = response.status_code
+
+    print(error.format(status) if (status >= 400) else response.text)
