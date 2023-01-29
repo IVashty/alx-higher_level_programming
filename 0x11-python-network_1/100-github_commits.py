@@ -2,12 +2,11 @@
 """
 Script that lists the most recent commands
 """
+from requests import get
+from sys import argv
 
 
 if __name__ == "__main__":
-    from requests import get
-    from sys import argv
-
     repo = argv[1]
     owner = argv[2]
     v = 0
