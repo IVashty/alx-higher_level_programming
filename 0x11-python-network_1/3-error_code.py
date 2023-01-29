@@ -4,10 +4,11 @@ script takes in a url and
 displays the body of a response from a url
 """
 from urllib import request, error
-from sys import argv
+import sys
 
 
 if __name__ == "__main__":
+    argv = sys.argv
     url = argv[1]
 
     try:
