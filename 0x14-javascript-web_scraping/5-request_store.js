@@ -12,7 +12,7 @@ request(webpageURL, (error, response, body) => {
     return
   }
 
-  fs.appendFile(fileName, body, 'utf8', (err) => {
+  fs.writeFile(fileName, body, 'utf8', (err) => {
     if (err) {
       console.error(err)
       return
