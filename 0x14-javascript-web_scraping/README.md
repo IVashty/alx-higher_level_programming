@@ -64,7 +64,14 @@ The fourth argument is a callback function that is called after the __write__ op
 If there was an error during the write, it is passed to the callback function and printed to the console.
 
 2. The request module  is used to send HTTP requests to a server and retrieve the response data.
-A GET request is a method used to retrieve information from a server without modifying any data on the server.
-The request.get function is used to send a GET request to the URL passed as the first argument.
+A __GET request__ is a method used to retrieve information from a server without modifying any data on the server.
+The __request.get function__ is used to send a GET request to the URL passed as the first argument.
 If the request is successful, the status code of the response is logged to the console.
 If there is an error, the error object is logged to the console.
+URL USED : https://alx-intranet.hbtn.io/status && https://alx-intranet.hbtn.io/doesnt_exist
+
+3. the request module to make a GET request to the Star Wars API and retrieve the data for the movie with the specified movieID.
+The request function takes 
+    *FIRST ARGUMENT* - the [URL of star wars API](https://swapi-api.alx-tools.com/api/films/${movieId})
+    *SECOND ARGUMENT* - a callback function, that is the response data once the request is complete.
+The script first checks if there was an error with the request and, if there was, it prints the error. Then, it checks the status code of the response and, if it's not 200 (OK), it prints an error message.
