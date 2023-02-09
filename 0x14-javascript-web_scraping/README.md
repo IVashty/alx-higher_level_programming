@@ -49,4 +49,17 @@ $ sudo npm install request --global
 $ export NODE_PATH=/usr/lib/node_modules 
 ```
 
-**Notes:** Request module has been deprecated since February 2020 - the team is considering alternative to replace this module - however, it’s a really simple and powerful module for practicing web-scraping in JavaScript (and still used a lot in the industry).
+# TASKS answers :
+0. We use the fs module to read the contents of a file.
+The file path is passed as a command line argument and resolved using the path module.
+The file is read using the fs.readFile method, with utf-8 encoding specified.
+If there is an error reading the file, the error object is printed to the console using console.error.
+The file contents are printed to the console using console.log if no error occurs.
+
+1. The script takes two command line arguments, the first is the file path, and the second is the string to write. 
+The __fs.writeFile__ method is used to write the string to the file.
+The third argument is the encoding, which is set to 'utf-8'.
+The fourth argument is a callback function that is called after the __write__ operation is complete.
+If there was an error during the write, it is passed to the callback function and printed to the console.
+
+
