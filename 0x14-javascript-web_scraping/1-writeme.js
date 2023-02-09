@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 // using fs module to write a string to a filePath
 const fs = require('fs');
 
