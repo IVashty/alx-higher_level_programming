@@ -57,9 +57,14 @@ If there is an error reading the file, the error object is printed to the consol
 The file contents are printed to the console using console.log if no error occurs.
 
 1. The script takes two command line arguments, the first is the file path, and the second is the string to write. 
-The __fs.writeFile__ method is used to write the string to the file.
+The __fs.appendFile__ method is used to write the string to the file.
+can use also __fs.writeFile__
 The third argument is the encoding, which is set to 'utf-8'.
 The fourth argument is a callback function that is called after the __write__ operation is complete.
 If there was an error during the write, it is passed to the callback function and printed to the console.
 
-
+2. The request module  is used to send HTTP requests to a server and retrieve the response data.
+A GET request is a method used to retrieve information from a server without modifying any data on the server.
+The request.get function is used to send a GET request to the URL passed as the first argument.
+If the request is successful, the status code of the response is logged to the console.
+If there is an error, the error object is logged to the console.
