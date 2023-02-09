@@ -5,10 +5,9 @@ const fs = require('fs');
 const filePath = process.argv[2];
 const stringToWrite = process.argv[3];
 
-fs.writeFile(filePath, stringToWrite, 'utf-8', (error) => {
+fs.appendFile(filePath, stringToWrite, 'utf-8', (error) => {
   if (error) {
     console.error(error);
     return;
   }
-  console.log(`The file was written successfully at ${filePath}`);
 });
