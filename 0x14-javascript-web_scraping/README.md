@@ -75,3 +75,12 @@ The request function takes
     *FIRST ARGUMENT* - the [URL of star wars API](https://swapi-api.alx-tools.com/api/films/${movieId})
     *SECOND ARGUMENT* - a callback function, that is the response data once the request is complete.
 The script first checks if there was an error with the request and, if there was, it prints the error. Then, it checks the status code of the response and, if it's not 200 (OK), it prints an error message.
+
+4. using requests , the  starwars API is passed so that we can find the character wedge Antilles and then we count how many times its occurs
+The script first checks if there was an error with the request and, if there was, it prints the error. Then, it checks the status code of       the response and, if it's not 200 (OK), it prints an error message.
+
+5. Now we combine both request and fs module to gather contents from  a webpage  and the save it to  a file name of path.
+
+
+
+
