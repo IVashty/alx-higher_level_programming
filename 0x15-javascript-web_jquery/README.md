@@ -60,3 +60,9 @@ Concepts
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head> 
 ```
+
+## Methods:
+`document.querySelector(selector)`:
+    used to select the first element that matches a specified CSS selector in the document. It then searches the entire document for an element that matches the given CSS selector and returns the first matching element.
+
+using `import $ from 'jQuery'` in place of the method `document.querySelector()`

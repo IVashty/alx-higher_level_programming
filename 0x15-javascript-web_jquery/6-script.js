@@ -1,4 +1,3 @@
-#!/usr/bin/node
 // imports the jQuery library
 import $ from 'jquery';
 

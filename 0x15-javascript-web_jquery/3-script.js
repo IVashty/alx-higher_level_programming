@@ -1,6 +1,5 @@
-#!/usr/bin/node
 // importing the jQuery library so that we can assign the $ var to it
-import $ from 'jQuery';
+import $ from 'jquery';
 
 // function is called when the page has finished loading
 // a click event listener to it using the click() method.

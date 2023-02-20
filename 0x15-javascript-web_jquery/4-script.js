@@ -1,5 +1,4 @@
-#!/usr/bin/node
-//
+// statement imports the jQuery library
 import $ from 'jquery';
 
 // function is called when the page has finished loading

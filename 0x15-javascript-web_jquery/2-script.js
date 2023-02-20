@@ -1,4 +1,4 @@
-#!/usr/bin/node
+// statement imports the jQuery library
 import $ from 'jquery';
 // execute the code when the page Document Object Model (DOM) is ready.
 // a click event handler to the selected element,the function inside the curly braces {...} will be executed.

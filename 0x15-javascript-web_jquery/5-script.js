@@ -1,5 +1,4 @@
-#!/usr/bin/node
-//
+// statement imports the jQuery library
 import $ from 'jquery';
 
 //
