@@ -1,4 +1,5 @@
 #!/usr/bin/node
+import $ from 'jquery';
 // function is called when the page has finished loading.
 // It ensures that the code doesn't run until the page is ready.
 $(document).ready(function () {
