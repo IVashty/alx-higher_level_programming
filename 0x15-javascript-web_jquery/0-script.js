@@ -1,4 +1,3 @@
-#!/usr/bin/node
 // Get the header element using document.querySelector
 const header = document.querySelector('header');
 
