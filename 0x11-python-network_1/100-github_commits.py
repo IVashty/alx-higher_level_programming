@@ -9,17 +9,11 @@ from sys import argv
 if __name__ == "__main__":
     repo = argv[1]
     owner = argv[2]
-    v = 0
 
-    url = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
+    url = "https://api.github.com/repos/{owner_name}/{repo_name}"
 
+    # make a get request to the url
     response = get(url)
+    # extract from the json
     json = response.json()
-
-    for element in json:
-        if v > 9:
-            break
-        k = element.get("k")
-        author = element.get("commit").get("author").get("name")
-        print("{}: {}".format(k, author))
-        v += 1
+    print("The repository {owner_name}/{repo_name} has {json} json.")
